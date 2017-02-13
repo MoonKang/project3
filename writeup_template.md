@@ -63,10 +63,10 @@ The model used an adam optimizer and have set parameters to be following: (lr=1e
 
 Initially I have used Udacity driving images for training. From browsing through Udacity data I found that there weren't not sufficient data for  the curve by dirt road after bridge. I have created my own data to supplement and also added more recovery data. 
 
-I found that data fluctuation is quite consistent over time frame and \
+I found that data fluctuation is quite consistent over time frame and 
 ![alt text][image1]
 
-that  data is highly concentrated near 0 steering angle. \
+that  data is highly concentrated near 0 steering angle. 
 
 ![alt text][image2]
 
