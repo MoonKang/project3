@@ -63,16 +63,23 @@ The model used an adam optimizer and have set parameters to be following: (lr=1e
 
 Initially I have used Udacity driving images for training. From browsing through Udacity data I found that there weren't not sufficient data for  the curve by dirt road after bridge. I have created my own data to supplement and also added more recovery data. 
 
-I found that data fluctuation is quite consistent over time frame and 
+I found that data fluctuation is quite consistent over time frame and \\
 ![alt text][image1]
-that  data is highly concentrated near 0 steering angle. 
+
+that  data is highly concentrated near 0 steering angle. \\
+
 ![alt text][image2]
 
-I have used a combination of center, right, and left images and have adjusted +- 0.25 for left and right images. 
+I have used a combination of center, right, and left images and have adjusted +- 0.22 for left and right images. 
+
 ![alt text][image3]
+
 Then I have 1) shifted, adjusted brightness, shadowed, and flipped images. 
+
 ![alt text][image4]
+
 Then I have resized images to be 64x64 for training.
+
 ![alt text][image5]
 
 
@@ -96,6 +103,7 @@ The final model architecture (model2) consists of 4 convolution neural network l
 ####3. Creation of the Training Set & Training Process
 
 I have combined Udacity data and my own to supplement it. As described at 'Appropriate training data' I have added variations to prevent for brightness, shadow, and positional bias. From data histogram I have noticed that large portion of data has close to 0 steering angle. As a result, I have noticed that the car had tendency of going straight despite of curvatures in lane. In order to avoid the problem, I have manually lowered the percentage of data that has 0 steering degree and data histogram has been changed: 
+
 ![alt text][image6]
 
 I finally randomly shuffled the data set and put 10% of the data into a validation set. I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 14 as evidenced by trials with epoch of 10 and 15.
