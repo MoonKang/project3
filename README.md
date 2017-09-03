@@ -1,11 +1,8 @@
 **Behavrioal Cloning Project**
 
 The goals / steps of this project are the following:
-* Use the simulator to collect data of good driving behavior
 * Build, a convolution neural network in Keras that predicts steering angles from images
-* Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
-* Summarize the results with a written report
 
 [image1]: ./img/steering_dist.png "Steering distribution"
 [image2]: ./img/steering_hist.png "Steering Histogram"
@@ -15,13 +12,7 @@ The goals / steps of this project are the following:
 [image6]: ./img/steering_adj.png "Steering New Histogram"
 ![image7](./img/originnet.gif)
 
-#### Files
-My project includes the following files:
-* model.py containing the script to create and train the model
-* drive.py for driving the car in autonomous mode
-* model.h5 containing a trained convolution neural network 
-
-#### Model Architecture and Training Strategy
+#### Model Architecture
 My first step was to use a convolution neural network architecture similar to the one provided by Nvidia. I was able to get good training and valid loss but I was not able to complete a lap on track with the trained model. Then I added max pool layers between cnn so that the model can be more focused in training. 
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. To combat the overfitting, I modified the model to include dropouts. 
