@@ -1,6 +1,6 @@
 **Behavrioal Cloning Project**
 
-The goals / steps of this project are the following:
+Goals:
 * Build, a convolution neural network in Keras that predicts steering angles from images
 * Test that the model successfully drives around track one without leaving the road
 
