@@ -10,6 +10,8 @@ Goals:
 [image4]: ./img/img_adj.png "Image2"
 [image5]: ./img/image_adj.png "Image3"
 [image6]: ./img/steering_adj.png "Steering New Histogram"
+
+#### Output
 ![image7](./img/originnet.gif)
 
 #### Model Architecture
