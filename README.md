@@ -70,6 +70,4 @@ I have combined Udacity data and my own to supplement it. As described at 'Appro
 
 I finally randomly shuffled the data set and put 10% of the data into a validation set. I used this training data for training the model. The validation set helped determine if the model was over or under fitting. 
 
-#### Output
-![alt text][image7]
 
